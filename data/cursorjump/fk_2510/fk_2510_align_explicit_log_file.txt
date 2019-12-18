@@ -1,0 +1,24 @@
+1577355199
+The above number is the seed used to fix the randomization bug.
+NEW files for participant fk_2510 have been created.
+START TIME:	22:52:19
+SEED:	1577355199
+START TRIAL:	1
+The files for participant fk_2510 have been APPENDED for this session.
+Seed: 1577355199
+START TIME:	22:59:06
+SEED:	1577355199
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	23:25:23
+Time Elsapsed (minutes):	26.2833333333
+Program Exited
+The files for participant fk_2510 have been APPENDED for this session.
+Seed: 1577355199
+START TIME:	01:00:32
+SEED:	1577355199
+START TRIAL:	326
+END TRIAL:	NO TRIALS WERE RUN
+END TIME:	01:00:56
+Time Elsapsed (minutes):	0.4
+Program Exited

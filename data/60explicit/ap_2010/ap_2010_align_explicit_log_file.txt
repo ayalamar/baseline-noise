@@ -1,0 +1,10 @@
+570993313
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ap_1020 have been created.
+START TIME:	20:04:12
+SEED:	570993313
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	20:32:58
+Time Elsapsed (minutes):	28.7666666667
+Program Exited

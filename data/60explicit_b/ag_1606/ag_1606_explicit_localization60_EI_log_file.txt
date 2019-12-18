@@ -1,0 +1,10 @@
+924365371
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ag_1606 have been created.
+START TIME:	17:44:24
+SEED:	924365371
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	18:26:55
+Time Elsapsed (minutes):	42.5166666667
+Program Exited

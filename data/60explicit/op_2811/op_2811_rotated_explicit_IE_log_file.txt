@@ -1,0 +1,10 @@
+430718027
+The above number is the seed used to fix the randomization bug.
+NEW files for participant op_2811 have been created.
+START TIME:	02:12:02
+SEED:	430718027
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	02:57:45
+Time Elsapsed (minutes):	45.7166666667
+Program Exited

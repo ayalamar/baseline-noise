@@ -1,0 +1,19 @@
+356200051
+The above number is the seed used to fix the randomization bug.
+NEW files for participant pc_0504 have been created.
+START TIME:	20:07:28
+SEED:	356200051
+START TRIAL:	1
+END TRIAL:	NO TRIALS WERE RUN
+END TIME:	20:09:21
+Time Elsapsed (minutes):	1.88333333333
+Program Exited
+The files for participant pc_0504 have been APPENDED for this session.
+Seed: 356200051
+START TIME:	20:09:51
+SEED:	356200051
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	21:19:13
+Time Elsapsed (minutes):	69.3666666667
+Program Exited

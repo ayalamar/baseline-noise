@@ -1,0 +1,34 @@
+997118224
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ca_0205 have been created.
+START TIME:	21:01:26
+SEED:	997118224
+START TRIAL:	1
+END TRIAL:	NO TRIALS WERE RUN
+END TIME:	21:02:17
+Time Elsapsed (minutes):	0.85
+Program Exited
+The files for participant ca_0205 have been APPENDED for this session.
+Seed: 997118224
+START TIME:	21:02:35
+SEED:	997118224
+START TRIAL:	1
+The files for participant ca_0205 have been APPENDED for this session.
+Seed: 997118224
+START TIME:	21:10:17
+SEED:	997118224
+START TRIAL:	47
+The files for participant ca_0205 have been APPENDED for this session.
+Seed: 997118224
+START TIME:	21:13:05
+SEED:	997118224
+START TRIAL:	53
+The files for participant ca_0205 have been APPENDED for this session.
+Seed: 997118224
+START TIME:	21:22:16
+SEED:	997118224
+START TRIAL:	137
+END TRIAL:	324
+END TIME:	21:34:08
+Time Elsapsed (minutes):	11.8666666667
+Program Exited

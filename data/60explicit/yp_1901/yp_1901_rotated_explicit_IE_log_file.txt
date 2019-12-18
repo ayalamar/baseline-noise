@@ -1,0 +1,10 @@
+924768844
+The above number is the seed used to fix the randomization bug.
+NEW files for participant yp_1901 have been created.
+START TIME:	01:17:14
+SEED:	924768844
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	02:01:04
+Time Elsapsed (minutes):	43.8333333333
+Program Exited

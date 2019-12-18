@@ -1,0 +1,10 @@
+2111020488
+The above number is the seed used to fix the randomization bug.
+NEW files for participant az_1306 have been created.
+START TIME:	21:16:56
+SEED:	2111020488
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	21:54:43
+Time Elsapsed (minutes):	37.7833333333
+Program Exited

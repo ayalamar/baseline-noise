@@ -1,0 +1,10 @@
+1423488316
+The above number is the seed used to fix the randomization bug.
+NEW files for participant hr_0407 have been created.
+START TIME:	19:26:48
+SEED:	1423488316
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	19:59:04
+Time Elsapsed (minutes):	32.2666666667
+Program Exited

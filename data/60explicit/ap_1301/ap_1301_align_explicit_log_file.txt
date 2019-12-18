@@ -1,0 +1,10 @@
+776532604
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ap_1301 have been created.
+START TIME:	20:18:26
+SEED:	776532604
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	20:49:34
+Time Elsapsed (minutes):	31.1333333333
+Program Exited

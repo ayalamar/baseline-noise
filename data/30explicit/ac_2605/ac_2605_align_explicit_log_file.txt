@@ -1,0 +1,20 @@
+515795161
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ac_2605 have been created.
+START TIME:	20:30:39
+SEED:	515795161
+START TRIAL:	1
+The files for participant ac_2605 have been APPENDED for this session.
+Seed: 515795161
+START TIME:	20:40:56
+SEED:	515795161
+START TRIAL:	47
+The files for participant ac_2605 have been APPENDED for this session.
+Seed: 515795161
+START TIME:	20:41:48
+SEED:	515795161
+START TRIAL:	47
+END TRIAL:	324
+END TIME:	21:04:23
+Time Elsapsed (minutes):	22.5833333333
+Program Exited

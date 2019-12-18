@@ -1,0 +1,10 @@
+910530979
+The above number is the seed used to fix the randomization bug.
+NEW files for participant hp_0205 have been created.
+START TIME:	00:09:47
+SEED:	910530979
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	00:48:56
+Time Elsapsed (minutes):	39.15
+Program Exited

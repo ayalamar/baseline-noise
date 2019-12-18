@@ -1,0 +1,10 @@
+692432427
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ta_0607 have been created.
+START TIME:	18:18:02
+SEED:	692432427
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	19:03:39
+Time Elsapsed (minutes):	45.6166666667
+Program Exited

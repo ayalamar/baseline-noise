@@ -1,0 +1,29 @@
+1270792534
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mm_0205 have been created.
+START TIME:	20:27:59
+SEED:	1270792534
+START TRIAL:	1
+The files for participant mm_0205 have been APPENDED for this session.
+Seed: 1270792534
+START TIME:	20:34:42
+SEED:	1270792534
+START TRIAL:	47
+The files for participant mm_0205 have been APPENDED for this session.
+Seed: 1270792534
+START TIME:	20:40:10
+SEED:	1270792534
+START TRIAL:	49
+END TRIAL:	49
+END TIME:	20:40:55
+Time Elsapsed (minutes):	0.75
+Program Exited
+The files for participant mm_0205 have been APPENDED for this session.
+Seed: 1270792534
+START TIME:	20:40:59
+SEED:	1270792534
+START TRIAL:	49
+END TRIAL:	324
+END TIME:	21:03:26
+Time Elsapsed (minutes):	22.45
+Program Exited

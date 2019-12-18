@@ -1,0 +1,19 @@
+466231209
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ia_0109 have been created.
+START TIME:	20:24:35
+SEED:	466231209
+START TRIAL:	1
+END TRIAL:	94
+END TIME:	20:34:57
+Time Elsapsed (minutes):	10.3666666667
+Program Exited
+The files for participant ia_0109 have been APPENDED for this session.
+Seed: 466231209
+START TIME:	20:35:08
+SEED:	466231209
+START TRIAL:	91
+END TRIAL:	636
+END TIME:	21:17:08
+Time Elsapsed (minutes):	42.0
+Program Exited

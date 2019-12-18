@@ -1,0 +1,10 @@
+962223118
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mn_0610 have been created.
+START TIME:	23:43:45
+SEED:	962223118
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	00:30:40
+Time Elsapsed (minutes):	46.9166666667
+Program Exited

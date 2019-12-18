@@ -1,0 +1,15 @@
+161009157
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ha_1501 have been created.
+START TIME:	22:12:26
+SEED:	161009157
+START TRIAL:	1
+The files for participant ha_1501 have been APPENDED for this session.
+Seed: 161009157
+START TIME:	22:17:11
+SEED:	161009157
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	22:47:38
+Time Elsapsed (minutes):	30.45
+Program Exited

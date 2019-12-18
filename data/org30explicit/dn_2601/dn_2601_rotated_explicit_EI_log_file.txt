@@ -1,0 +1,10 @@
+539047460
+The above number is the seed used to fix the randomization bug.
+NEW files for participant dn_2601 have been created.
+START TIME:	00:25:37
+SEED:	539047460
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	01:00:51
+Time Elsapsed (minutes):	35.2333333333
+Program Exited

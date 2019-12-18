@@ -1,0 +1,19 @@
+1093344577
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bd_0707 have been created.
+START TIME:	15:26:22
+SEED:	1093344577
+START TRIAL:	1
+END TRIAL:	NO TRIALS WERE RUN
+END TIME:	15:30:39
+Time Elsapsed (minutes):	4.28333333333
+Program Exited
+The files for participant bd_0707 have been APPENDED for this session.
+Seed: 1093344577
+START TIME:	15:30:43
+SEED:	1093344577
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	16:04:12
+Time Elsapsed (minutes):	33.4833333333
+Program Exited

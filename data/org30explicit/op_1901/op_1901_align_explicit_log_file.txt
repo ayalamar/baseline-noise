@@ -1,0 +1,10 @@
+39874213
+The above number is the seed used to fix the randomization bug.
+NEW files for participant op_1901 have been created.
+START TIME:	00:10:11
+SEED:	39874213
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	00:36:44
+Time Elsapsed (minutes):	26.55
+Program Exited

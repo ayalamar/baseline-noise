@@ -1,0 +1,15 @@
+56854241
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ns_1311 have been created.
+START TIME:	19:53:45
+SEED:	56854241
+START TRIAL:	1
+The files for participant ns_1311 have been APPENDED for this session.
+Seed: 56854241
+START TIME:	19:55:28
+SEED:	56854241
+START TRIAL:	15
+END TRIAL:	324
+END TIME:	20:18:41
+Time Elsapsed (minutes):	23.2166666667
+Program Exited

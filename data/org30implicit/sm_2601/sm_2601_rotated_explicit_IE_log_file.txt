@@ -1,0 +1,10 @@
+783876801
+The above number is the seed used to fix the randomization bug.
+NEW files for participant sm_2601 have been created.
+START TIME:	01:56:46
+SEED:	783876801
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	02:35:58
+Time Elsapsed (minutes):	39.2
+Program Exited

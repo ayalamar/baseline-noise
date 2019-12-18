@@ -1,0 +1,34 @@
+199977950
+The above number is the seed used to fix the randomization bug.
+NEW files for participant lw_1306 have been created.
+START TIME:	01:53:36
+SEED:	199977950
+START TRIAL:	1
+END TRIAL:	96
+END TIME:	02:05:56
+Time Elsapsed (minutes):	12.3333333333
+Program Exited
+The files for participant lw_1306 have been APPENDED for this session.
+Seed: 199977950
+START TIME:	02:09:01
+SEED:	199977950
+START TRIAL:	46
+The files for participant lw_1306 have been APPENDED for this session.
+Seed: 199977950
+START TIME:	02:16:47
+SEED:	199977950
+START TRIAL:	73
+The files for participant lw_1306 have been APPENDED for this session.
+Seed: 199977950
+START TIME:	02:19:08
+SEED:	199977950
+START TRIAL:	91
+The files for participant lw_1306 have been APPENDED for this session.
+Seed: 199977950
+START TIME:	02:25:58
+SEED:	199977950
+START TRIAL:	91
+END TRIAL:	636
+END TIME:	03:01:13
+Time Elsapsed (minutes):	35.25
+Program Exited

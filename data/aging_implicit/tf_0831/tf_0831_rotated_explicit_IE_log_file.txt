@@ -1,0 +1,10 @@
+963054948
+The above number is the seed used to fix the randomization bug.
+NEW files for participant tf_0831 have been created.
+START TIME:	18:40:27
+SEED:	963054948
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	19:33:56
+Time Elsapsed (minutes):	53.4833333333
+Program Exited

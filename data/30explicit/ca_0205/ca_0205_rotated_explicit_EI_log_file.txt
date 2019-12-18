@@ -1,0 +1,10 @@
+1017128327
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ca_0205 have been created.
+START TIME:	21:44:38
+SEED:	1017128327
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	22:23:44
+Time Elsapsed (minutes):	39.1
+Program Exited

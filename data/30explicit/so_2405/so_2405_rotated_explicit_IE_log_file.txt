@@ -1,0 +1,10 @@
+901370087
+The above number is the seed used to fix the randomization bug.
+NEW files for participant so_2405 have been created.
+START TIME:	23:08:35
+SEED:	901370087
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	23:47:18
+Time Elsapsed (minutes):	38.7166666667
+Program Exited

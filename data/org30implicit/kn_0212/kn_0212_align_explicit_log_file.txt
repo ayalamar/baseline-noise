@@ -1,0 +1,10 @@
+2077845204
+The above number is the seed used to fix the randomization bug.
+NEW files for participant kn_0212 have been created.
+START TIME:	23:18:40
+SEED:	2077845204
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	23:45:38
+Time Elsapsed (minutes):	26.9666666667
+Program Exited

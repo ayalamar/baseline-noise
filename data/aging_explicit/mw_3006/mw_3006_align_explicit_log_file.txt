@@ -1,0 +1,10 @@
+2137662388
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mw_3006 have been created.
+START TIME:	19:19:30
+SEED:	2137662388
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	19:54:59
+Time Elsapsed (minutes):	35.4833333333
+Program Exited

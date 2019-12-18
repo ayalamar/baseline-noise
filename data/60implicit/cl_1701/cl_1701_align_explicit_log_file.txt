@@ -1,0 +1,10 @@
+461883093
+The above number is the seed used to fix the randomization bug.
+NEW files for participant cl_1701 have been created.
+START TIME:	22:52:27
+SEED:	461883093
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	23:24:23
+Time Elsapsed (minutes):	31.9333333333
+Program Exited

@@ -1,0 +1,10 @@
+775708892
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mc_0806 have been created.
+START TIME:	17:50:14
+SEED:	775708892
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	18:42:34
+Time Elsapsed (minutes):	52.3333333333
+Program Exited

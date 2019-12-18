@@ -1,0 +1,10 @@
+642212520
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ho_2405 have been created.
+START TIME:	19:51:57
+SEED:	642212520
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	20:34:19
+Time Elsapsed (minutes):	42.3666666667
+Program Exited

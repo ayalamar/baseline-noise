@@ -1,0 +1,10 @@
+663203322
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ak_0106 have been created.
+START TIME:	17:26:17
+SEED:	663203322
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	17:56:53
+Time Elsapsed (minutes):	30.6
+Program Exited

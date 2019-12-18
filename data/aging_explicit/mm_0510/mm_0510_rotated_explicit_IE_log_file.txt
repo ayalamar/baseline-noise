@@ -1,0 +1,10 @@
+1185467962
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mm_0510 have been created.
+START TIME:	19:02:16
+SEED:	1185467962
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	20:04:47
+Time Elsapsed (minutes):	62.5166666667
+Program Exited

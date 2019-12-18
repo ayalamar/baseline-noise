@@ -1,0 +1,15 @@
+581804837
+The above number is the seed used to fix the randomization bug.
+NEW files for participant dp_2005 have been created.
+START TIME:	23:04:53
+SEED:	581804837
+START TRIAL:	1
+The files for participant dp_2005 have been APPENDED for this session.
+Seed: 581804837
+START TIME:	23:05:39
+SEED:	581804837
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	23:42:12
+Time Elsapsed (minutes):	36.55
+Program Exited

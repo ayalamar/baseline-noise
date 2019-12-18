@@ -1,0 +1,10 @@
+383726235
+The above number is the seed used to fix the randomization bug.
+NEW files for participant cb_2909 have been created.
+START TIME:	18:18:08
+SEED:	383726235
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	19:06:23
+Time Elsapsed (minutes):	48.25
+Program Exited

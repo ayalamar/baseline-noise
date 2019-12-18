@@ -1,0 +1,10 @@
+1502161
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bg_0705 have been created.
+START TIME:	18:01:32
+SEED:	1502161
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	18:55:27
+Time Elsapsed (minutes):	53.9166666667
+Program Exited

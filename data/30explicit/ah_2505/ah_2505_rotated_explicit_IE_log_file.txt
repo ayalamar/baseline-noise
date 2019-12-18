@@ -1,0 +1,10 @@
+1287562261
+The above number is the seed used to fix the randomization bug.
+NEW files for participant AH2505 have been created.
+START TIME:	02:10:05
+SEED:	1287562261
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	02:49:14
+Time Elsapsed (minutes):	39.15
+Program Exited

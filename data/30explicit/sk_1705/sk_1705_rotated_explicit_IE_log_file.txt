@@ -1,0 +1,10 @@
+722488670
+The above number is the seed used to fix the randomization bug.
+NEW files for participant sk_1705 have been created.
+START TIME:	21:35:06
+SEED:	722488670
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	22:16:10
+Time Elsapsed (minutes):	41.0666666667
+Program Exited

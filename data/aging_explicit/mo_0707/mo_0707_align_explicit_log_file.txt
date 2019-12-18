@@ -1,0 +1,20 @@
+541112977
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mo_0707 have been created.
+START TIME:	20:32:18
+SEED:	541112977
+START TRIAL:	1
+The files for participant mo_0707 have been APPENDED for this session.
+Seed: 541112977
+START TIME:	20:41:28
+SEED:	541112977
+START TRIAL:	48
+The files for participant mo_0707 have been APPENDED for this session.
+Seed: 541112977
+START TIME:	20:49:18
+SEED:	541112977
+START TRIAL:	91
+END TRIAL:	324
+END TIME:	21:09:05
+Time Elsapsed (minutes):	19.7833333333
+Program Exited

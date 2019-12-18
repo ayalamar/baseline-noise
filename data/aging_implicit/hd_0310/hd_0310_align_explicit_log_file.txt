@@ -1,0 +1,10 @@
+492502096
+The above number is the seed used to fix the randomization bug.
+NEW files for participant hd_0310 have been created.
+START TIME:	18:31:38
+SEED:	492502096
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	19:16:58
+Time Elsapsed (minutes):	45.3333333333
+Program Exited

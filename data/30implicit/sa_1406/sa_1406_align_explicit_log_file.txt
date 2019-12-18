@@ -1,0 +1,10 @@
+273435579
+The above number is the seed used to fix the randomization bug.
+NEW files for participant sa_1406 have been created.
+START TIME:	22:13:10
+SEED:	273435579
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	22:39:08
+Time Elsapsed (minutes):	25.9666666667
+Program Exited

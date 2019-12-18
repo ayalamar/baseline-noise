@@ -1,0 +1,15 @@
+450252638
+The above number is the seed used to fix the randomization bug.
+NEW files for participant sk_1705 have been created.
+START TIME:	20:50:25
+SEED:	450252638
+START TRIAL:	1
+The files for participant sk_1705 have been APPENDED for this session.
+Seed: 450252638
+START TIME:	20:52:51
+SEED:	450252638
+START TRIAL:	3
+END TRIAL:	324
+END TIME:	21:18:41
+Time Elsapsed (minutes):	25.8333333333
+Program Exited

@@ -1,0 +1,15 @@
+1663722163
+The above number is the seed used to fix the randomization bug.
+NEW files for participant az_1306 have been created.
+START TIME:	20:37:35
+SEED:	1663722163
+START TRIAL:	1
+The files for participant az_1306 have been APPENDED for this session.
+Seed: 1663722163
+START TIME:	20:46:13
+SEED:	1663722163
+START TRIAL:	46
+END TRIAL:	324
+END TIME:	21:07:46
+Time Elsapsed (minutes):	21.55
+Program Exited

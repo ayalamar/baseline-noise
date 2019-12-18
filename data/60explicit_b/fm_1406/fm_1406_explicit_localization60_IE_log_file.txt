@@ -1,0 +1,25 @@
+1280015497
+The above number is the seed used to fix the randomization bug.
+NEW files for participant fm_1406 have been created.
+START TIME:	01:07:53
+SEED:	1280015497
+START TRIAL:	1
+The files for participant fm_1406 have been APPENDED for this session.
+Seed: 1280015497
+START TIME:	01:37:25
+SEED:	1280015497
+START TRIAL:	380
+The files for participant fm_1406 have been APPENDED for this session.
+Seed: 1280015497
+START TIME:	01:38:40
+SEED:	1280015497
+START TRIAL:	380
+The files for participant fm_1406 have been APPENDED for this session.
+Seed: 1280015497
+START TIME:	01:47:47
+SEED:	1280015497
+START TRIAL:	365
+END TRIAL:	636
+END TIME:	02:07:26
+Time Elsapsed (minutes):	19.65
+Program Exited

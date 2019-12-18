@@ -1,0 +1,10 @@
+2009204369
+The above number is the seed used to fix the randomization bug.
+NEW files for participant me_0311 have been created.
+START TIME:	22:38:30
+SEED:	2009204369
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	23:10:29
+Time Elsapsed (minutes):	31.9833333333
+Program Exited

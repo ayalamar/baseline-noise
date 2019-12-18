@@ -1,0 +1,15 @@
+615297687
+The above number is the seed used to fix the randomization bug.
+NEW files for participant dp_2005 have been created.
+START TIME:	22:32:27
+SEED:	615297687
+START TRIAL:	1
+The files for participant dp_2005 have been APPENDED for this session.
+Seed: 615297687
+START TIME:	22:46:53
+SEED:	615297687
+START TRIAL:	137
+END TRIAL:	324
+END TIME:	22:59:02
+Time Elsapsed (minutes):	12.15
+Program Exited

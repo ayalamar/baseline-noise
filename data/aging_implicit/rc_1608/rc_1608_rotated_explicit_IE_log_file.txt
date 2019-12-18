@@ -1,0 +1,19 @@
+162269961
+The above number is the seed used to fix the randomization bug.
+NEW files for participant rc_1608 have been created.
+START TIME:	18:58:19
+SEED:	162269961
+START TRIAL:	1
+END TRIAL:	349
+END TIME:	19:33:42
+Time Elsapsed (minutes):	35.3833333333
+Program Exited
+The files for participant rc_1608 have been APPENDED for this session.
+Seed: 162269961
+START TIME:	19:42:32
+SEED:	162269961
+START TRIAL:	350
+END TRIAL:	636
+END TIME:	20:12:03
+Time Elsapsed (minutes):	29.5166666667
+Program Exited

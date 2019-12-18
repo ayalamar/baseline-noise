@@ -1,0 +1,10 @@
+1411584530
+The above number is the seed used to fix the randomization bug.
+NEW files for participant cn_2205 have been created.
+START TIME:	16:57:11
+SEED:	1411584530
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	17:27:14
+Time Elsapsed (minutes):	30.05
+Program Exited

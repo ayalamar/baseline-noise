@@ -1,0 +1,10 @@
+929533819
+The above number is the seed used to fix the randomization bug.
+NEW files for participant \el_2810 have been created.
+START TIME:	21:56:48
+SEED:	929533819
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	22:27:10
+Time Elsapsed (minutes):	30.3666666667
+Program Exited

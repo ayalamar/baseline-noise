@@ -1,0 +1,10 @@
+625997027
+The above number is the seed used to fix the randomization bug.
+NEW files for participant va_0202 have been created.
+START TIME:	20:40:16
+SEED:	625997027
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	21:24:55
+Time Elsapsed (minutes):	44.65
+Program Exited

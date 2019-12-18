@@ -1,0 +1,10 @@
+1558448401
+The above number is the seed used to fix the randomization bug.
+NEW files for participant rk_1201 have been created.
+START TIME:	01:10:11
+SEED:	1558448401
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	01:57:40
+Time Elsapsed (minutes):	47.4833333333
+Program Exited

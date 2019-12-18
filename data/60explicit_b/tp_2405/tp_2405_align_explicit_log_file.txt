@@ -1,0 +1,10 @@
+443201016
+The above number is the seed used to fix the randomization bug.
+NEW files for participant tp_2405 have been created.
+START TIME:	19:11:14
+SEED:	443201016
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	19:39:34
+Time Elsapsed (minutes):	28.3333333333
+Program Exited

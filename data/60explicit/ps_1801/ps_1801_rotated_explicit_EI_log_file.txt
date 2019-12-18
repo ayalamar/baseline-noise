@@ -1,0 +1,10 @@
+327980799
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ps_1801 have been created.
+START TIME:	23:43:51
+SEED:	327980799
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	00:28:54
+Time Elsapsed (minutes):	45.05
+Program Exited

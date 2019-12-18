@@ -1,0 +1,10 @@
+367780525
+The above number is the seed used to fix the randomization bug.
+NEW files for participant he_0906 have been created.
+START TIME:	20:16:13
+SEED:	367780525
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	20:57:56
+Time Elsapsed (minutes):	41.7166666667
+Program Exited

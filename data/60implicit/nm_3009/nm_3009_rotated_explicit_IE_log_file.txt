@@ -1,0 +1,10 @@
+525698418
+The above number is the seed used to fix the randomization bug.
+NEW files for participant nm_3009 have been created.
+START TIME:	20:40:00
+SEED:	525698418
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	21:22:22
+Time Elsapsed (minutes):	42.3666666667
+Program Exited

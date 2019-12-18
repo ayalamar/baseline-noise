@@ -1,0 +1,10 @@
+35894614
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ag_0905 have been created.
+START TIME:	19:16:38
+SEED:	35894614
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	19:54:34
+Time Elsapsed (minutes):	37.9333333333
+Program Exited

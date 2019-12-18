@@ -1,0 +1,19 @@
+795271826
+The above number is the seed used to fix the randomization bug.
+NEW files for participant sm_1601 have been created.
+START TIME:	22:42:10
+SEED:	795271826
+START TRIAL:	1
+END TRIAL:	NO TRIALS WERE RUN
+END TIME:	22:46:58
+Time Elsapsed (minutes):	4.8
+Program Exited
+The files for participant sm_1601 have been APPENDED for this session.
+Seed: 795271826
+START TIME:	22:47:05
+SEED:	795271826
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	23:30:02
+Time Elsapsed (minutes):	42.95
+Program Exited

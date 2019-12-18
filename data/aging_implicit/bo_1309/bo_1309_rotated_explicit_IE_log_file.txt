@@ -1,0 +1,10 @@
+407691742
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bo_1309 have been created.
+START TIME:	20:43:31
+SEED:	407691742
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	21:32:02
+Time Elsapsed (minutes):	48.5166666667
+Program Exited

@@ -1,0 +1,10 @@
+454755307
+The above number is the seed used to fix the randomization bug.
+NEW files for participant gs_3105 have been created.
+START TIME:	20:24:59
+SEED:	454755307
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	20:51:09
+Time Elsapsed (minutes):	26.1666666667
+Program Exited

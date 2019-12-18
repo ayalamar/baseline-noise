@@ -1,0 +1,10 @@
+683868060
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bb_1609 have been created.
+START TIME:	19:57:49
+SEED:	683868060
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	20:26:25
+Time Elsapsed (minutes):	28.6
+Program Exited

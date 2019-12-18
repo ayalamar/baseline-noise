@@ -1,0 +1,15 @@
+1029937408
+The above number is the seed used to fix the randomization bug.
+NEW files for participant sm_2510 have been created.
+START TIME:	00:55:20
+SEED:	1029937408
+START TRIAL:	1
+The files for participant sm_2510 have been APPENDED for this session.
+Seed: 1029937408
+START TIME:	01:01:06
+SEED:	1029937408
+START TRIAL:	47
+END TRIAL:	324
+END TIME:	01:25:18
+Time Elsapsed (minutes):	24.2
+Program Exited

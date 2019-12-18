@@ -1,0 +1,10 @@
+718757017
+The above number is the seed used to fix the randomization bug.
+NEW files for participant am_0301 have been created.
+START TIME:	00:23:11
+SEED:	718757017
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	00:52:24
+Time Elsapsed (minutes):	29.2166666667
+Program Exited

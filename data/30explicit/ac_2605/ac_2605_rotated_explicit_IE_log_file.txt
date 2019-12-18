@@ -1,0 +1,15 @@
+631521086
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ac_2605 have been created.
+START TIME:	21:11:54
+SEED:	631521086
+START TRIAL:	1
+The files for participant ac_2605 have been APPENDED for this session.
+Seed: 631521086
+START TIME:	21:13:19
+SEED:	631521086
+START TRIAL:	3
+END TRIAL:	636
+END TIME:	21:57:12
+Time Elsapsed (minutes):	43.8833333333
+Program Exited

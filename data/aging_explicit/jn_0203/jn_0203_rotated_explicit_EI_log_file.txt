@@ -1,0 +1,10 @@
+392555092
+The above number is the seed used to fix the randomization bug.
+NEW files for participant jn_0203 have been created.
+START TIME:	22:40:09
+SEED:	392555092
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	23:42:36
+Time Elsapsed (minutes):	62.45
+Program Exited

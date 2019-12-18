@@ -1,0 +1,10 @@
+1516737444
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ae_2211 have been created.
+START TIME:	00:07:39
+SEED:	1516737444
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	00:38:42
+Time Elsapsed (minutes):	31.05
+Program Exited

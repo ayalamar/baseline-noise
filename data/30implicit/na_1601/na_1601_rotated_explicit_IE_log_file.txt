@@ -1,0 +1,10 @@
+829299567
+The above number is the seed used to fix the randomization bug.
+NEW files for participant na_1601 have been created.
+START TIME:	20:05:07
+SEED:	829299567
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	20:51:14
+Time Elsapsed (minutes):	46.1166666667
+Program Exited

@@ -1,0 +1,15 @@
+1392767152
+The above number is the seed used to fix the randomization bug.
+NEW files for participant 003 have been created.
+START TIME:	00:38:23
+SEED:	1392767152
+START TRIAL:	1
+The files for participant 003 have been APPENDED for this session.
+Seed: 1392767152
+START TIME:	00:48:23
+SEED:	1392767152
+START TRIAL:	74
+END TRIAL:	324
+END TIME:	01:06:39
+Time Elsapsed (minutes):	18.2666666667
+Program Exited

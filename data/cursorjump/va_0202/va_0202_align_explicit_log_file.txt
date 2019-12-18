@@ -1,0 +1,20 @@
+1128277209
+The above number is the seed used to fix the randomization bug.
+NEW files for participant va_0202 have been created.
+START TIME:	20:03:48
+SEED:	1128277209
+START TRIAL:	1
+The files for participant va_0202 have been APPENDED for this session.
+Seed: 1128277209
+START TIME:	20:14:00
+SEED:	1128277209
+START TRIAL:	88
+The files for participant va_0202 have been APPENDED for this session.
+Seed: 1128277209
+START TIME:	20:15:48
+SEED:	1128277209
+START TRIAL:	88
+END TRIAL:	324
+END TIME:	20:32:31
+Time Elsapsed (minutes):	16.7166666667
+Program Exited

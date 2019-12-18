@@ -1,0 +1,19 @@
+516839100
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mn_1307 have been created.
+START TIME:	20:15:19
+SEED:	516839100
+START TRIAL:	1
+END TRIAL:	349
+END TIME:	20:49:18
+Time Elsapsed (minutes):	33.9833333333
+Program Exited
+The files for participant mn_1307 have been APPENDED for this session.
+Seed: 516839100
+START TIME:	20:58:24
+SEED:	516839100
+START TRIAL:	350
+END TRIAL:	636
+END TIME:	21:23:19
+Time Elsapsed (minutes):	24.9166666667
+Program Exited

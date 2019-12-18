@@ -1,0 +1,10 @@
+995490464
+The above number is the seed used to fix the randomization bug.
+NEW files for participant fs_1011 have been created.
+START TIME:	23:01:05
+SEED:	995490464
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	23:28:08
+Time Elsapsed (minutes):	27.05
+Program Exited

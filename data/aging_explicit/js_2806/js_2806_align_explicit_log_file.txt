@@ -1,0 +1,33 @@
+1342374344
+The above number is the seed used to fix the randomization bug.
+NEW files for participant js_2806 have been created.
+START TIME:	15:57:44
+SEED:	1342374344
+START TRIAL:	1
+END TRIAL:	NO TRIALS WERE RUN
+END TIME:	16:02:06
+Time Elsapsed (minutes):	4.36666666667
+Program Exited
+The files for participant js_2806 have been APPENDED for this session.
+Seed: 1342374344
+START TIME:	16:02:43
+SEED:	1342374344
+START TRIAL:	2
+The files for participant js_2806 have been APPENDED for this session.
+Seed: 1342374344
+START TIME:	16:11:43
+SEED:	1342374344
+START TRIAL:	47
+END TRIAL:	NO TRIALS WERE RUN
+END TIME:	16:15:18
+Time Elsapsed (minutes):	3.58333333333
+Program Exited
+The files for participant js_2806 have been APPENDED for this session.
+Seed: 1342374344
+START TIME:	16:16:06
+SEED:	1342374344
+START TRIAL:	46
+END TRIAL:	324
+END TIME:	16:41:31
+Time Elsapsed (minutes):	25.4166666667
+Program Exited

@@ -1,0 +1,10 @@
+1097884474
+The above number is the seed used to fix the randomization bug.
+NEW files for participant pa_0216 have been created.
+START TIME:	22:43:57
+SEED:	1097884474
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	23:19:14
+Time Elsapsed (minutes):	35.2833333333
+Program Exited

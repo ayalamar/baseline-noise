@@ -1,0 +1,10 @@
+452776459
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ej_2106 have been created.
+START TIME:	17:51:08
+SEED:	452776459
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	18:40:50
+Time Elsapsed (minutes):	49.7
+Program Exited

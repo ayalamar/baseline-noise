@@ -1,0 +1,44 @@
+614329585
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ss_2505 have been created.
+START TIME:	19:05:00
+SEED:	614329585
+START TRIAL:	1
+The files for participant ss_2505 have been APPENDED for this session.
+Seed: 614329585
+START TIME:	19:18:24
+SEED:	614329585
+START TRIAL:	119
+The files for participant ss_2505 have been APPENDED for this session.
+Seed: 614329585
+START TIME:	19:19:09
+SEED:	614329585
+START TRIAL:	119
+The files for participant ss_2505 have been APPENDED for this session.
+Seed: 614329585
+START TIME:	19:20:16
+SEED:	614329585
+START TRIAL:	119
+The files for participant ss_2505 have been APPENDED for this session.
+Seed: 614329585
+START TIME:	19:22:56
+SEED:	614329585
+START TRIAL:	119
+The files for participant ss_2505 have been APPENDED for this session.
+Seed: 614329585
+START TIME:	19:23:47
+SEED:	614329585
+START TRIAL:	119
+END TRIAL:	NO TRIALS WERE RUN
+END TIME:	19:24:46
+Time Elsapsed (minutes):	0.983333333333
+Program Exited
+The files for participant ss_2505 have been APPENDED for this session.
+Seed: 614329585
+START TIME:	19:25:57
+SEED:	614329585
+START TRIAL:	119
+END TRIAL:	324
+END TIME:	19:40:20
+Time Elsapsed (minutes):	14.3833333333
+Program Exited

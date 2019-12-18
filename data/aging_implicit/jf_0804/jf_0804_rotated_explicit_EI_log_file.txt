@@ -1,0 +1,10 @@
+258232201
+The above number is the seed used to fix the randomization bug.
+NEW files for participant jf_0804 have been created.
+START TIME:	20:40:57
+SEED:	258232201
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	21:27:37
+Time Elsapsed (minutes):	46.6666666667
+Program Exited

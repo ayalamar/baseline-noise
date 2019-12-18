@@ -1,0 +1,19 @@
+230985139
+The above number is the seed used to fix the randomization bug.
+NEW files for participant jd_1007 have been created.
+START TIME:	18:16:13
+SEED:	230985139
+START TRIAL:	1
+END TRIAL:	349
+END TIME:	18:46:31
+Time Elsapsed (minutes):	30.3
+Program Exited
+The files for participant jd_1007 have been APPENDED for this session.
+Seed: 230985139
+START TIME:	18:54:39
+SEED:	230985139
+START TRIAL:	351
+END TRIAL:	636
+END TIME:	19:15:41
+Time Elsapsed (minutes):	21.0333333333
+Program Exited

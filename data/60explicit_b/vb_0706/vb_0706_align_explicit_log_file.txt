@@ -1,0 +1,10 @@
+1071809183
+The above number is the seed used to fix the randomization bug.
+NEW files for participant vb_0706 have been created.
+START TIME:	19:22:48
+SEED:	1071809183
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	20:04:33
+Time Elsapsed (minutes):	41.75
+Program Exited

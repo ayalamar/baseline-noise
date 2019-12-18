@@ -1,0 +1,10 @@
+596690127
+The above number is the seed used to fix the randomization bug.
+NEW files for participant nd_0212 have been created.
+START TIME:	21:49:42
+SEED:	596690127
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	22:15:48
+Time Elsapsed (minutes):	26.1
+Program Exited

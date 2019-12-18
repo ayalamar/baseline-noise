@@ -1,0 +1,28 @@
+2055492010
+The above number is the seed used to fix the randomization bug.
+NEW files for participant hr_1305 have been created.
+START TIME:	19:26:10
+SEED:	2055492010
+START TRIAL:	1
+END TRIAL:	NO TRIALS WERE RUN
+END TIME:	19:26:51
+Time Elsapsed (minutes):	0.683333333333
+Program Exited
+The files for participant hr_1305 have been APPENDED for this session.
+Seed: 2055492010
+START TIME:	19:27:01
+SEED:	2055492010
+START TRIAL:	1
+END TRIAL:	NO TRIALS WERE RUN
+END TIME:	19:27:40
+Time Elsapsed (minutes):	0.65
+Program Exited
+The files for participant hr_1305 have been APPENDED for this session.
+Seed: 2055492010
+START TIME:	19:32:39
+SEED:	2055492010
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	20:05:12
+Time Elsapsed (minutes):	32.55
+Program Exited

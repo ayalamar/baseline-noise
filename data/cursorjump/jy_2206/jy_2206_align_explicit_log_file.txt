@@ -1,0 +1,10 @@
+456761843
+The above number is the seed used to fix the randomization bug.
+NEW files for participant jy_2206 have been created.
+START TIME:	01:34:12
+SEED:	456761843
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	01:59:00
+Time Elsapsed (minutes):	24.8
+Program Exited

@@ -1,0 +1,10 @@
+91804943
+The above number is the seed used to fix the randomization bug.
+NEW files for participant sa_1406 have been created.
+START TIME:	22:42:41
+SEED:	91804943
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	23:19:58
+Time Elsapsed (minutes):	37.2833333333
+Program Exited

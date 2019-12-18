@@ -1,0 +1,10 @@
+53212448
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mo_0707 have been created.
+START TIME:	22:33:59
+SEED:	53212448
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	23:23:40
+Time Elsapsed (minutes):	49.6833333333
+Program Exited

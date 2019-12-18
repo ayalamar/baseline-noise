@@ -1,0 +1,10 @@
+97978811
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ja_2610 have been created.
+START TIME:	22:58:26
+SEED:	97978811
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	23:29:30
+Time Elsapsed (minutes):	31.0666666667
+Program Exited

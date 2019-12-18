@@ -1,0 +1,10 @@
+23735704
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ay_1506 have been created.
+START TIME:	19:08:54
+SEED:	23735704
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	19:48:15
+Time Elsapsed (minutes):	39.35
+Program Exited

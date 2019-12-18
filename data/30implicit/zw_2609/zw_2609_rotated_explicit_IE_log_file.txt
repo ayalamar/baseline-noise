@@ -1,0 +1,10 @@
+1232519417
+The above number is the seed used to fix the randomization bug.
+NEW files for participant zw_2609 have been created.
+START TIME:	22:02:52
+SEED:	1232519417
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	22:44:19
+Time Elsapsed (minutes):	41.45
+Program Exited

@@ -1,0 +1,15 @@
+1136229671
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bh_0608 have been created.
+START TIME:	19:25:01
+SEED:	1136229671
+START TRIAL:	1
+The files for participant bh_0608 have been APPENDED for this session.
+Seed: 1136229671
+START TIME:	19:35:47
+SEED:	1136229671
+START TRIAL:	47
+END TRIAL:	324
+END TIME:	19:58:44
+Time Elsapsed (minutes):	22.95
+Program Exited

@@ -1,0 +1,20 @@
+898159179
+The above number is the seed used to fix the randomization bug.
+NEW files for participant nm_0122 have been created.
+START TIME:	20:31:25
+SEED:	898159179
+START TRIAL:	1
+The files for participant nm_0122 have been APPENDED for this session.
+Seed: 898159179
+START TIME:	20:44:22
+SEED:	898159179
+START TRIAL:	64
+The files for participant nm_0122 have been APPENDED for this session.
+Seed: 898159179
+START TIME:	20:48:40
+SEED:	898159179
+START TRIAL:	91
+END TRIAL:	324
+END TIME:	21:04:19
+Time Elsapsed (minutes):	15.65
+Program Exited

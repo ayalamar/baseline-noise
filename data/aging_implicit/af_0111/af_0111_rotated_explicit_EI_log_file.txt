@@ -1,0 +1,10 @@
+1672693294
+The above number is the seed used to fix the randomization bug.
+NEW files for participant AF_0111 have been created.
+START TIME:	20:35:48
+SEED:	1672693294
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	21:27:28
+Time Elsapsed (minutes):	51.6666666667
+Program Exited

@@ -1,0 +1,10 @@
+712221532
+The above number is the seed used to fix the randomization bug.
+NEW files for participant AD_0206 have been created.
+START TIME:	19:54:02
+SEED:	712221532
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	20:20:38
+Time Elsapsed (minutes):	26.6
+Program Exited

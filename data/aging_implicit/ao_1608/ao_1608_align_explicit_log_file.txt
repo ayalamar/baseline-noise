@@ -1,0 +1,10 @@
+107492543
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ao_1608 have been created.
+START TIME:	19:38:12
+SEED:	107492543
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	20:13:07
+Time Elsapsed (minutes):	34.9166666667
+Program Exited

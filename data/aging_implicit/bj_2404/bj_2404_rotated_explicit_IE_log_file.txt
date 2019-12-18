@@ -1,0 +1,19 @@
+1549989230
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bj_2404 have been created.
+START TIME:	20:07:38
+SEED:	1549989230
+START TRIAL:	1
+END TRIAL:	463
+END TIME:	20:50:01
+Time Elsapsed (minutes):	42.3833333333
+Program Exited
+The files for participant bj_2404 have been APPENDED for this session.
+Seed: 1549989230
+START TIME:	20:58:32
+SEED:	1549989230
+START TRIAL:	464
+END TRIAL:	636
+END TIME:	21:13:08
+Time Elsapsed (minutes):	14.6
+Program Exited

@@ -1,0 +1,10 @@
+22410197
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mb_0206 have been created.
+START TIME:	17:26:52
+SEED:	22410197
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	17:57:27
+Time Elsapsed (minutes):	30.5833333333
+Program Exited

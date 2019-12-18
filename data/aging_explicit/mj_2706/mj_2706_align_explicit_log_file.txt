@@ -1,0 +1,10 @@
+966433222
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mj_2706 have been created.
+START TIME:	21:02:58
+SEED:	966433222
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	21:47:53
+Time Elsapsed (minutes):	44.9166666667
+Program Exited

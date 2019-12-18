@@ -1,0 +1,10 @@
+1317480573
+The above number is the seed used to fix the randomization bug.
+NEW files for participant 001 have been created.
+START TIME:	18:03:00
+SEED:	1317480573
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	18:57:12
+Time Elsapsed (minutes):	54.2
+Program Exited

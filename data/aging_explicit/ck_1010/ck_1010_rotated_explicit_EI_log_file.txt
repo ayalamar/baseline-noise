@@ -1,0 +1,28 @@
+990919762
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ck_1010 have been created.
+START TIME:	00:46:27
+SEED:	990919762
+START TRIAL:	1
+END TRIAL:	628
+END TIME:	01:34:03
+Time Elsapsed (minutes):	47.6
+Program Exited
+The files for participant ck_1010 have been APPENDED for this session.
+Seed: 990919762
+START TIME:	01:35:14
+SEED:	990919762
+START TRIAL:	629
+END TRIAL:	636
+END TIME:	01:37:11
+Time Elsapsed (minutes):	1.95
+Program Exited
+The files for participant ck_1010 have been APPENDED for this session.
+Seed: 990919762
+START TIME:	01:37:48
+SEED:	990919762
+START TRIAL:	638
+END TRIAL:	NO TRIALS WERE RUN
+END TIME:	01:38:16
+Time Elsapsed (minutes):	0.466666666667
+Program Exited

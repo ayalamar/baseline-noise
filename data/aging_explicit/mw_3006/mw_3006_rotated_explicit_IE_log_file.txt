@@ -1,0 +1,15 @@
+1954251390
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mw_3006 have been created.
+START TIME:	20:42:20
+SEED:	1954251390
+START TRIAL:	1
+The files for participant mw_3006 have been APPENDED for this session.
+Seed: 1954251390
+START TIME:	20:51:33
+SEED:	1954251390
+START TRIAL:	91
+END TRIAL:	636
+END TIME:	21:37:27
+Time Elsapsed (minutes):	45.9
+Program Exited

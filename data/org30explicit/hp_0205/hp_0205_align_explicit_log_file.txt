@@ -1,0 +1,15 @@
+897435826
+The above number is the seed used to fix the randomization bug.
+NEW files for participant hp_0205 have been created.
+START TIME:	23:40:51
+SEED:	897435826
+START TRIAL:	1
+The files for participant hp_0205 have been APPENDED for this session.
+Seed: 897435826
+START TIME:	23:49:43
+SEED:	897435826
+START TRIAL:	48
+END TRIAL:	324
+END TIME:	00:08:52
+Time Elsapsed (minutes):	19.15
+Program Exited

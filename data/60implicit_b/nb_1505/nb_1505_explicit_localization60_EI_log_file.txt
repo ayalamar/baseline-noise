@@ -1,0 +1,10 @@
+447301040
+The above number is the seed used to fix the randomization bug.
+NEW files for participant nb_1505 have been created.
+START TIME:	20:09:50
+SEED:	447301040
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	20:51:04
+Time Elsapsed (minutes):	41.2333333333
+Program Exited

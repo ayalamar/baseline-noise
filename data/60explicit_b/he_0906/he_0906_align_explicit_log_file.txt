@@ -1,0 +1,10 @@
+615717351
+The above number is the seed used to fix the randomization bug.
+NEW files for participant he_0906 have been created.
+START TIME:	19:43:26
+SEED:	615717351
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	20:09:22
+Time Elsapsed (minutes):	25.9333333333
+Program Exited

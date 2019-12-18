@@ -1,0 +1,15 @@
+174145363
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ns_2405 have been created.
+START TIME:	22:22:55
+SEED:	174145363
+START TRIAL:	1
+The files for participant ns_2405 have been APPENDED for this session.
+Seed: 174145363
+START TIME:	22:31:08
+SEED:	174145363
+START TRIAL:	85
+END TRIAL:	636
+END TIME:	23:08:00
+Time Elsapsed (minutes):	36.8666666667
+Program Exited

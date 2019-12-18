@@ -1,0 +1,15 @@
+535860606
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bh_0806 have been created.
+START TIME:	20:40:05
+SEED:	535860606
+START TRIAL:	1
+The files for participant bh_0806 have been APPENDED for this session.
+Seed: 535860606
+START TIME:	20:46:14
+SEED:	535860606
+START TRIAL:	4
+END TRIAL:	636
+END TIME:	21:31:45
+Time Elsapsed (minutes):	45.5166666667
+Program Exited

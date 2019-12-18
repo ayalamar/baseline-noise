@@ -1,0 +1,15 @@
+288065146
+The above number is the seed used to fix the randomization bug.
+NEW files for participant sc_0106 have been created.
+START TIME:	21:41:25
+SEED:	288065146
+START TRIAL:	1
+The files for participant sc_0106 have been APPENDED for this session.
+Seed: 288065146
+START TIME:	21:51:31
+SEED:	288065146
+START TRIAL:	46
+END TRIAL:	324
+END TIME:	22:16:19
+Time Elsapsed (minutes):	24.8
+Program Exited

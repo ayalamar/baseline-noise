@@ -1,0 +1,10 @@
+1800154125
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mq_1905 have been created.
+START TIME:	21:23:03
+SEED:	1800154125
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	22:00:39
+Time Elsapsed (minutes):	37.6
+Program Exited

@@ -1,0 +1,15 @@
+1729351866
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mr_2405 have been created.
+START TIME:	00:43:37
+SEED:	1729351866
+START TRIAL:	1
+The files for participant mr_2405 have been APPENDED for this session.
+Seed: 1729351866
+START TIME:	00:50:25
+SEED:	1729351866
+START TRIAL:	47
+END TRIAL:	324
+END TIME:	01:11:04
+Time Elsapsed (minutes):	20.65
+Program Exited

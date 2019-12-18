@@ -1,0 +1,10 @@
+276577221
+The above number is the seed used to fix the randomization bug.
+NEW files for participant mk_2301 have been created.
+START TIME:	20:55:01
+SEED:	276577221
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	21:23:57
+Time Elsapsed (minutes):	28.9333333333
+Program Exited

@@ -1,0 +1,10 @@
+1214358006
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ka_1905 have been created.
+START TIME:	22:41:04
+SEED:	1214358006
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	23:04:39
+Time Elsapsed (minutes):	23.5833333333
+Program Exited
