@@ -2,7 +2,6 @@ setwd("/Users/mayala/Desktop/baseline noise")
 
 library(dplyr)
 library(TOSTER)
-library(ggplot2)
 
 colorset <- list()
 
@@ -116,52 +115,69 @@ summary(mod4) # no p = 0.699
 # equivalence test
 TOSTr(n = 189,
       r = 0.09332826,
-      low_eqbound_r=-0.5,
+      low_eqbound_r=-0.5, 
       high_eqbound_r=0.5,
       alpha=0.05)
 
-
-# big plot
-plotdf <- rbind(modeldf1, modeldf2, modeldf3, modeldf4)
-plotdf <- plotdf %>%
-  mutate(loc_task = ifelse(active_bool==0, "Passive", "Active"))
-
-ggplot(plotdf, aes(sd_error, sd_loc, colour = factor(active_bool))) +
-  geom_point(shape = 21, size = 1, fill = "white", stroke = 1) +
-  labs(y = "Localization variability (σ)",
-       x = "Motor error variability (σ)") +
-  facet_grid(loc_task ~ task_name) +
-  theme_classic() +
-  theme(strip.background = element_blank(),
-        legend.position = "none") +
-  xlim(0, 20) +
-  ylim(0, 50)
-
-
-
-## previous style
+################################
+## BIG PLOT
+## USING previous style
 layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE),
        widths=c(3,3,2), heights=c(1,1))
-color <- colorset[[sprintf('%s%sS',group,substr(task,1,3))]]
 
-plot(plotdf$sd_error,plotdf$sd_loc,
-     main=sprintf('%s - %s',group,task),
-     # xlim=c(0,15),
-     # ylim=c(-10,30),
+plot(modeldf1$sd_error, modeldf1$sd_loc,
+    main=sprintf('Aligned cursor - passive localization'),
+     #xlim=c(0,50),
+     #ylim=c(0,20),
      axes=F,
      xlab='motor error variability [σ]',
-     ylab='localization variability [σ]',
-     col=color)
-regr <- lm(plotdf$sd_loc~plotdf$sd_error)
+     ylab='localization variability [σ]')
+
+regr <- lm(modeldf1$sd_loc~modeldf1$sd_error)
 abline(coef=regr$coefficients,col=rgb(0.5,0.5,0.5))
-
-cortest <- cor.test(plotdf$sd_error,plotdf$sd_loc)
-text(11,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',cortest$estimate,cortest$p.value,length(plotdf$sd_error)),pos=4)
-
+cortest <- cor.test(modeldf1$sd_error,modeldf1$sd_loc)
+text(11,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',cortest$estimate,cortest$p.value,length(modeldf1$sd_error)),pos=4)
 axis(side=1,at=c(0,5,10,15))
-axis(side=2,at=c(-10,0,10,20,30))
+axis(side=2,at=c(0,10,20,30,40,50))
 
-  
-  
-  
-  
+plot(modeldf2$sd_error, modeldf2$sd_loc,
+     main=sprintf('Aligned cursor - active localization'),
+     #xlim=c(0,20),
+     #ylim=c(0,20),
+     axes=F,
+     xlab='motor error variability [σ]',
+     ylab='localization variability [σ]')
+regr <- lm(modeldf2$sd_loc~modeldf2$sd_error)
+abline(coef=regr$coefficients,col=rgb(0.5,0.5,0.5))
+cortest <- cor.test(modeldf2$sd_error,modeldf2$sd_loc)
+text(11,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',cortest$estimate,cortest$p.value,length(modeldf2$sd_error)),pos=4)
+axis(side=1,at=c(0,5,10,15))
+axis(side=2,at=c(0,10,20,30,40,50))
+
+plot(modeldf3$sd_error, modeldf3$sd_loc,
+     main=sprintf('Aligned no-cursor - passive localization'),
+     #xlim=c(0,20),
+     #ylim=c(0,20),
+     axes=F,
+     xlab='motor error variability [σ]',
+     ylab='localization variability [σ]')
+regr <- lm(modeldf3$sd_loc~modeldf3$sd_error)
+abline(coef=regr$coefficients,col=rgb(0.5,0.5,0.5))
+cortest <- cor.test(modeldf3$sd_error,modeldf3$sd_loc)
+text(11,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',cortest$estimate,cortest$p.value,length(modeldf3$sd_error)),pos=4)
+axis(side=1,at=c(0,5,10,15))
+axis(side=2,at=c(0,10,20,30,40,50))
+
+plot(modeldf4$sd_error, modeldf4$sd_loc,
+     main=sprintf('Aligned no-cursor - active localization'),
+     #xlim=c(0,20),
+     #ylim=c(0,20),
+     axes=F,
+     xlab='motor error variability [σ]',
+     ylab='localization variability [σ]')
+regr <- lm(modeldf4$sd_loc~modeldf4$sd_error)
+abline(coef=regr$coefficients,col=rgb(0.5,0.5,0.5))
+cortest <- cor.test(modeldf4$sd_error,modeldf4$sd_loc)
+text(11,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',cortest$estimate,cortest$p.value,length(modeldf4$sd_error)),pos=4)
+axis(side=1,at=c(0,5,10,15))
+axis(side=2,at=c(0,10,20,30,40,50))

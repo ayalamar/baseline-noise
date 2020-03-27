@@ -87,40 +87,4 @@ collapsed_corr <- function() {
   young_IDs <- read.csv('IDs/participants_sheet_younger.csv', header = TRUE)
   aging_IDs <- read.csv('IDs/participants_sheet_older.csv', header = TRUE)
   
-  #merge IDs back onto localizations
-  # young_SDs <- inner_join(young_localizations, young_IDs, by = "subject_no")
-  # aging_SDs <- inner_join(aging_localizations, aging_IDs, by = "subject_no")
-  # #load localizations
-  # collapsed_localizations <- NA
-  # for (group_file in load_files) {
-  #   
-  #   print(group_file)
-  #   
-  #   group_localizations_file <- sprintf('GROUP COMBINES/group localizations/%s_localizations.csv', group_file)
-  #   group_localizations <- read.csv(group_localizations_file, header = TRUE)
-  #   
-  #   if (is.data.frame(group_localizations) == TRUE) {
-  #     
-  #     collapsed_localizations <- rbind(collapsed_localizations, group_localizations)
-  #     
-  #   } else {
-  #     
-  #     collapsed_localizations <- group_localizations
-  #     
-  #   }
-  #   
-  # }
-  # 
-  # #write.csv(collapsed_localizations, 'GROUP COMBINES/group localizations/collapsed_loc.csv', row.names = FALSE)
-  # 
-  # #load aligned reaches
-  # 
-  # collapsed_aligned_training <- read.csv('~/Desktop/baseline noise/combined/GROUP COMBINES/collapsed.csv', header = TRUE)
-  # collapsed_aligned_training$ID <-  collapsed_aligned_training$subject 
-  # 
-  # #merge participants (do both with exclusions and everyone)
-  # collapsed_comp <- semi_join(collapsed_localizations, collapsed_aligned_training, by = "ID", keep)
-  # collapsed_comp.summary <- collapsed_comp %>%
-  #   group_by(ID) %>%
-  #   summarise(mean_pv)
 }
