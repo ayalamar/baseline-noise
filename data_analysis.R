@@ -7,21 +7,21 @@
 ## COLLECT DATA 
 collect_files <- function(group){
 
-setwd('~/Desktop/baseline data/baseline noise/')
+setwd('~/Desktop/baseline noise/')
 
 folder_name <- sprintf('data/%s', group)
 setwd(folder_name)
 print(folder_name)
 
 #create path for output
-new_path <- sprintf('~/Desktop/baseline data/baseline noise/combined/%s', group)
+new_path <- sprintf('~/Desktop/baseline noise/combined/%s', group)
 dir.create(new_path)
 
 #which participant files to open?
 pp <- list.files()
 
 #how many tasks per pp?
-tempfilepath <- sprintf('~/Desktop/baseline data/baseline noise/%s/%s', group, pp[1])
+tempfilepath <- sprintf('~/Desktop/baseline noise/%s/%s', group, pp[1])
 print(tempfilepath)
 list.files(tempfilepath) #note - we only want the aligned cursors and no-cursors
 
@@ -72,7 +72,7 @@ for (ppno in pp) {
   }
   
   #make a file with all of them in there
-  outfile_name <- sprintf('~/Desktop/baseline data/baseline noise/combined/%s/combined_%s_ALL.csv', group, pp_id)
+  outfile_name <- sprintf('~/Desktop/baseline noise/combined/%s/combined_%s_ALL.csv', group, pp_id)
   print(outfile_name)
   write.csv(ppdf, file = outfile_name, row.names = FALSE)  
   
@@ -88,10 +88,10 @@ for (ppno in pp) {
 preprocess_data <- function(group) {
   
   ##get pp IDs again
-  folder_name <- sprintf('~/Desktop/baseline data/baseline noise/data/%s', group)
+  folder_name <- sprintf('~/Desktop/baseline noise/data/%s', group)
   print(folder_name)
   
-  setwd('~/Desktop/baseline data/baseline noise/data')
+  setwd('~/Desktop/baseline noise/data')
   
   pp <- list.files(folder_name)
   pp <- pp[which(pp != "combined")]
@@ -165,12 +165,12 @@ preprocess_data <- function(group) {
 analyze_data <- function(group){
   
   ##get pp IDs again
-  folder_name <- sprintf('~/Desktop/baseline data/baseline noise/%s', group)
+  folder_name <- sprintf('~/Desktop/baseline noise/%s', group)
   print(folder_name)
   pp <- list.files(folder_name)
   pp <- pp[which(pp != "combined")]
   
-  folder_name <- sprintf('~/Desktop/baseline data/baseline noise/combined/%s', group)
+  folder_name <- sprintf('~/Desktop/baseline noise/combined/%s', group)
   setwd(folder_name)
   groupdf <- NA
   
