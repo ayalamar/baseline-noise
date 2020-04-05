@@ -1,0 +1,10 @@
+209424989
+The above number is the seed used to fix the randomization bug.
+NEW files for participant rg_0410 have been created.
+START TIME:	23:39:52
+SEED:	209424989
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	00:04:55
+Time Elsapsed (minutes):	25.05
+Program Exited

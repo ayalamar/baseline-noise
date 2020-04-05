@@ -1,0 +1,35 @@
+1981646356
+The above number is the seed used to fix the randomization bug.
+NEW files for participant s10 have been created.
+START TIME:	02:26:01
+SEED:	1981646356
+START TRIAL:	1
+The files for participant s10 have been APPENDED for this session.
+Seed: 1981646356
+START TIME:	02:38:17
+SEED:	1981646356
+START TRIAL:	71
+The files for participant s10 have been APPENDED for this session.
+Seed: 1981646356
+START TIME:	02:40:25
+SEED:	1981646356
+START TRIAL:	71
+The files for participant s10 have been APPENDED for this session.
+Seed: 1981646356
+START TIME:	02:48:41
+SEED:	1981646356
+START TRIAL:	41
+The files for participant s10 have been APPENDED for this session.
+Seed: 1981646356
+START TIME:	02:57:09
+SEED:	1981646356
+START TRIAL:	41
+The files for participant s10 have been APPENDED for this session.
+Seed: 1981646356
+START TIME:	02:59:36
+SEED:	1981646356
+START TRIAL:	41
+END TRIAL:	324
+END TIME:	03:22:54
+Time Elsapsed (minutes):	23.3
+Program Exited

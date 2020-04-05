@@ -1,0 +1,10 @@
+616057525
+The above number is the seed used to fix the randomization bug.
+NEW files for participant s20 have been created.
+START TIME:	04:52:30
+SEED:	616057525
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	05:44:58
+Time Elsapsed (minutes):	52.4666666667
+Program Exited

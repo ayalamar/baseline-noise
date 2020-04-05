@@ -1,0 +1,10 @@
+693092799
+The above number is the seed used to fix the randomization bug.
+NEW files for participant s45 have been created.
+START TIME:	01:14:44
+SEED:	693092799
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	01:49:05
+Time Elsapsed (minutes):	34.35
+Program Exited

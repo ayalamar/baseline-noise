@@ -1,0 +1,10 @@
+60516454
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bt_3251 have been created.
+START TIME:	21:38:56
+SEED:	60516454
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	22:29:08
+Time Elsapsed (minutes):	50.2
+Program Exited

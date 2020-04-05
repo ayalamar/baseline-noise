@@ -91,13 +91,13 @@ preprocess_data <- function(group) {
   folder_name <- sprintf('~/Desktop/baseline noise/data/%s', group)
   print(folder_name)
   
-  setwd('~/Desktop/baseline noise/data')
+  #setwd('~/Desktop/baseline noise/data')
   
   pp <- list.files(folder_name)
   pp <- pp[which(pp != "combined")]
-  
+  print(pp)
   ##go to previously combined data ^
-  folder_path <- sprintf('combined/%s', group )
+  folder_path <- sprintf('~/Desktop/baseline noise/combined/%s', group)
   setwd(folder_path)
   
   for (ppno in pp) {
@@ -165,7 +165,7 @@ preprocess_data <- function(group) {
 analyze_data <- function(group){
   
   ##get pp IDs again
-  folder_name <- sprintf('~/Desktop/baseline noise/%s', group)
+  folder_name <- sprintf('~/Desktop/baseline noise/data/%s', group)
   print(folder_name)
   pp <- list.files(folder_name)
   pp <- pp[which(pp != "combined")]

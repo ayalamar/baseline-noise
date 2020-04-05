@@ -1,0 +1,10 @@
+965002447
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bn_3245 have been created.
+START TIME:	02:31:00
+SEED:	965002447
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	03:23:23
+Time Elsapsed (minutes):	52.3833333333
+Program Exited

@@ -1,0 +1,10 @@
+939387170
+The above number is the seed used to fix the randomization bug.
+NEW files for participant ca_3259 have been created.
+START TIME:	21:41:13
+SEED:	939387170
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	22:06:10
+Time Elsapsed (minutes):	24.95
+Program Exited

@@ -1,0 +1,10 @@
+1046312327
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bf_3237 have been created.
+START TIME:	23:53:50
+SEED:	1046312327
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	00:22:55
+Time Elsapsed (minutes):	29.0833333333
+Program Exited

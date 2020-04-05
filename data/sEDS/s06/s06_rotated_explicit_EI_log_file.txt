@@ -1,0 +1,10 @@
+764448973
+The above number is the seed used to fix the randomization bug.
+NEW files for participant s06 have been created.
+START TIME:	03:09:42
+SEED:	764448973
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	03:59:21
+Time Elsapsed (minutes):	49.65
+Program Exited

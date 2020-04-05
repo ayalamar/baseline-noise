@@ -10,11 +10,13 @@ collapsed_analysis <- function() {
   
   setwd('~/Desktop/baseline noise/combined/GROUP COMBINES/')
   load_files <- list.files()
+  load_files <- load_files[-c(14:15)]
   
   collapsed_df <- NA
     
   for (exp in load_files){
     
+    print(exp)
     groupdf <- read.csv(exp, header = TRUE)
     groupdf <- groupdf %>% mutate(exp_group = exp)
     

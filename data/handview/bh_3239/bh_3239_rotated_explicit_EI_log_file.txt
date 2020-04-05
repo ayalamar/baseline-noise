@@ -1,0 +1,10 @@
+2092237523
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bh_3239 have been created.
+START TIME:	21:43:28
+SEED:	2092237523
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	22:32:43
+Time Elsapsed (minutes):	49.25
+Program Exited

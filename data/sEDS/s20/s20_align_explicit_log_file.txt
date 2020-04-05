@@ -1,0 +1,10 @@
+661371397
+The above number is the seed used to fix the randomization bug.
+NEW files for participant s20 have been created.
+START TIME:	04:20:28
+SEED:	661371397
+START TRIAL:	1
+END TRIAL:	324
+END TIME:	04:50:13
+Time Elsapsed (minutes):	29.75
+Program Exited

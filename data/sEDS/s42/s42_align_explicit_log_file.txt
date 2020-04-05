@@ -1,0 +1,15 @@
+744166961
+The above number is the seed used to fix the randomization bug.
+NEW files for participant s42 have been created.
+START TIME:	03:16:29
+SEED:	744166961
+START TRIAL:	1
+The files for participant s42 have been APPENDED for this session.
+Seed: 744166961
+START TIME:	03:22:11
+SEED:	744166961
+START TRIAL:	41
+END TRIAL:	324
+END TIME:	03:50:28
+Time Elsapsed (minutes):	28.2833333333
+Program Exited

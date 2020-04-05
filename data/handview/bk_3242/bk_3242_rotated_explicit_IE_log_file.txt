@@ -1,0 +1,10 @@
+739430550
+The above number is the seed used to fix the randomization bug.
+NEW files for participant bk_3242 have been created.
+START TIME:	22:15:47
+SEED:	739430550
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	23:06:46
+Time Elsapsed (minutes):	50.9833333333
+Program Exited

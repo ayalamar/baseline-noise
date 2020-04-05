@@ -1,0 +1,10 @@
+787912804
+The above number is the seed used to fix the randomization bug.
+NEW files for participant s42 have been created.
+START TIME:	03:52:46
+SEED:	787912804
+START TRIAL:	1
+END TRIAL:	636
+END TIME:	04:45:41
+Time Elsapsed (minutes):	52.9166666667
+Program Exited

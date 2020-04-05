@@ -112,6 +112,8 @@ modeldf4 <- left_join(aligned_no_cursor.summary, ncdf.summary_1, by="subject")
 mod4 <- lm(sd_loc ~ sd_error, data = modeldf4)
 summary(mod4) # no p = 0.699 
 
+# decided the bounds
+powerTOSTr(alpha=0.05, statistical_power=0.9, N = 189)
 # equivalence test
 TOSTr(n = 189,
       r = 0.09332826,
@@ -119,6 +121,14 @@ TOSTr(n = 189,
       high_eqbound_r=0.5,
       alpha=0.05)
 
+
+rsq <- function(formula, data, indices) {
+  d <- data[indices,] # allows boot to select sample
+  fit <- lm(formula, data=d)
+  return(summary(fit)$r.square)
+}
+results <- boot(data=modeldf4, statistic=rsq,R=1000, formula=sd_loc~sd_error)
+boot.ci(results, type="bca")
 ################################
 ## BIG PLOT
 ## USING previous style
