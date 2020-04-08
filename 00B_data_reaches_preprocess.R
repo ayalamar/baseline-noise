@@ -160,26 +160,27 @@ preprocess_data <- function(group) {
     
     #tag outliers per participant
     
-    ## pv angle outliers
-    boxplot(pv_angle~task, ylab='angle at peak velocity', xlab='rotation', data = pvsamples)
-    outlier_values_pv <- boxplot.stats(pvsamples$pv_angle)$out
-    pvsamples$isoutlier <- FALSE
-    pvsamples$isoutlier[which(pvsamples$pv_angle %in% outlier_values_pv)] <- TRUE
-    pvsamples$pv_angle[which(pvsamples$isoutlier == TRUE)] <- NA
-    
-    ## ep angle outliers
-    boxplot(pv_angle~task, ylab='angle at endpoint', xlab='rotation', data = epsamples)
-    outlier_values_ep <- boxplot.stats(epsamples$pv_angle)$out
-    epsamples$isoutlier <- FALSE
-    epsamples$isoutlier[which(epsamples$pv_angle %in% outlier_values_ep)] <- TRUE
-    epsamples$ep_angle[which(epsamples$isoutlier == TRUE)] <- NA
-    
+    # ## pv angle outliers
+    # boxplot(pv_angle~task, ylab='angle at peak velocity', xlab='rotation', data = pvsamples)
+    # outlier_values_pv <- boxplot.stats(pvsamples$pv_angle)$out
+    # pvsamples$isoutlier <- FALSE
+    # pvsamples$isoutlier[which(pvsamples$pv_angle %in% outlier_values_pv)] <- TRUE
+    # pvsamples$pv_angle[which(pvsamples$isoutlier == TRUE)] <- NA
+    # 
+    # ## ep angle outliers
+    # boxplot(ep_angle~task, ylab='angle at endpoint', xlab='rotation', data = epsamples)
+    # outlier_values_ep <- boxplot.stats(epsamples$ep_angle)$out
+    # epsamples$isoutlier <- FALSE
+    # epsamples$isoutlier[which(epsamples$ep_angle %in% outlier_values_ep)] <- TRUE
+    # epsamples$ep_angle[which(epsamples$isoutlier == TRUE)] <- NA
+    # 
     #add ID for later merge
     pvsamples <- pvsamples %>% 
       mutate(subject = ppno) %>%
       left_join(select(epsamples, ep_angle, trial), by = "trial") %>%
-      select(-c(isoutlier, pv_angle_OG))
-
+      select(subject, task, blocknumber, trial, pv_angle, ep_angle )
+      #select(-c(isoutlier, pv_angle_OG))
+    
     #output trial data
     outfile_name <- sprintf('trialdata_%s.csv', pp_id)
     write.csv(pvsamples, file = outfile_name, row.names = FALSE)
@@ -212,13 +213,6 @@ analyze_data <- function(group){
     
     ppdf <- read.csv(filename, header = TRUE)
     
-    #getting rid of extra col for now
-    if (dim(ppdf)[2] == 29) {
-      
-      ppdf <- ppdf[,-20]
-      
-    }
-    
     if (is.data.frame(ppdf) == TRUE) {
       
       groupdf <- rbind(groupdf, ppdf)
@@ -234,7 +228,8 @@ analyze_data <- function(group){
   groupdf <- groupdf[-c(1),] #note : this has a first row of NAs
   
   # #save a copy
-  outfile_name <- sprintf('allTaggedData_%s_n%s.csv', group, length(pp))
+  #outfile_name <- sprintf('allTaggedData_%s_n%s.csv', group, length(pp))
+  outfile_name <- sprintf('/Users/mayala/Desktop/baseline noise/combined/GROUP COMBINES/allTaggedData_%s_n%s.csv', group, length(pp))
   write.csv(groupdf, file = outfile_name, row.names = FALSE) 
 
   ## ANALYZE FOR EACH EXP
