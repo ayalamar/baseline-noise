@@ -54,7 +54,7 @@ t.test(aligned_cursor.summary$sd_error, aligned_no_cursor.summary$sd_error, pair
 plot(aligned_cursor.summary$sd_error, aligned_no_cursor.summary$sd_error, asp = 1)
 
 # correlate motor noise and baseline localization variability?
-# with exclusion criteria - N < 200
+# with exclusion criteria 
 aging <- aging %>%
   select(agegroup, group, trial, active_bool, localization_deg, ID)
 cntrl <- cntrl %>%
@@ -133,7 +133,7 @@ boot.ci(results, type="bca")
 ## BIG PLOT
 ## USING previous style
 layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE),
-       widths=c(3,3,2), heights=c(1,1))
+       widths=c(3,3,3,3), heights=c(1,1,1,1))
 
 plot(modeldf1$sd_error, modeldf1$sd_loc,
     main=sprintf('Aligned cursor - passive localization'),
@@ -191,3 +191,10 @@ cortest <- cor.test(modeldf4$sd_error,modeldf4$sd_loc)
 text(11,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',cortest$estimate,cortest$p.value,length(modeldf4$sd_error)),pos=4)
 axis(side=1,at=c(0,5,10,15))
 axis(side=2,at=c(0,10,20,30,40,50))
+
+experiment_Ns <- collapsed_df %>%
+  group_by(exp_group) %>%
+  distinct(participant) %>% 
+  tally()
+
+

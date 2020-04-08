@@ -85,8 +85,8 @@ collapsed_corr <- function() {
   aging_localizations <- read.csv('aging_varianceCIs.csv', header = TRUE)
   aging_localizations$subject_no <- aging_localizations$participant
   
-  #get IDs
-  young_IDs <- read.csv('IDs/participants_sheet_younger.csv', header = TRUE)
-  aging_IDs <- read.csv('IDs/participants_sheet_older.csv', header = TRUE)
+  # #get IDs
+  # young_IDs <- read.csv('IDs/participants_sheet_younger.csv', header = TRUE)
+  # aging_IDs <- read.csv('IDs/participants_sheet_older.csv', header = TRUE)
   
 }

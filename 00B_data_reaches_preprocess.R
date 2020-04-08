@@ -7,6 +7,8 @@
 ## COLLECT DATA 
 collect_files <- function(group){
 
+library(dplyr)
+
 setwd('~/Desktop/baseline noise/')
 
 folder_name <- sprintf('data/%s', group)
@@ -87,6 +89,8 @@ for (ppno in pp) {
 # creates an output w/ a single sample per trial per participant
 preprocess_data <- function(group) {
   
+  library(dplyr)
+  
   ##get pp IDs again
   folder_name <- sprintf('~/Desktop/baseline noise/data/%s', group)
   print(folder_name)
@@ -109,11 +113,16 @@ preprocess_data <- function(group) {
     
     taskdf <- read.csv(filename, header = TRUE)
     
-    ## ANGLE AT MAX VELOCITY ONLY
-    # create subset where you only select samples that occur at peak velocity
-    pvsamples <- taskdf[ which(taskdf$maxvelocity == 1), ]
-    # and only selected data
-    pvsamples <- pvsamples[ which(pvsamples$trialselected == 1), ]
+    ## For collecting ANGLE AT MAX VELOCITY & SELECTED ONLY
+    pvsamples <- taskdf %>%
+      filter(maxvelocity == 1) %>%
+      filter(trialselected == 1)
+    
+    ## For collecting ENDPOINT ANGLE & SELECTED ONLY
+    epsamples <- taskdf %>%
+      group_by(trial) %>%
+      filter(time == max(time)) %>%
+      filter(trialselected == 1)
 
     Yhome <- abs(unique(taskdf$Yhome))
     
@@ -123,34 +132,54 @@ preprocess_data <- function(group) {
       pvsamples$new_targety <- pvsamples$Ytarget + Yhome
       pvsamples$new_target_angle <- (atan2(pvsamples$new_targety, pvsamples$XTarget))/(pi/180)
       
+      epsamples$new_targety <- epsamples$Ytarget + Yhome
+      epsamples$new_target_angle <- (atan2(epsamples$new_targety, epsamples$XTarget))/(pi/180)
+      
       # calculate new cursor Y because (0,0) is not the origin/home, then store it
       pvsamples$relative_cursory <- pvsamples$Ycursor + Yhome
       pvsamples$pv_angle_OG <- (atan2(pvsamples$relative_cursory, pvsamples$Xcursor))/(pi/180)
       
+      epsamples$relative_cursory <- epsamples$Ycursor + Yhome
+      epsamples$ep_angle_OG <- (atan2(epsamples$relative_cursory, epsamples$Xcursor))/(pi/180)
+      
       # calculate angle at peak velocity relative to target location, then store it
       pvsamples$pv_angle <- pvsamples$target - pvsamples$pv_angle_OG # positive angles to the right of target; negative to left
+      
+      epsamples$ep_angle <- epsamples$target - epsamples$ep_angle_OG 
       
     } else {
       
       # no need to adjust Y, just calculate angle at peak velocity relative to target location & store it
       pvsamples$pv_angle_OG <- (atan2(pvsamples$Ycursor, pvsamples$Xcursor))/(pi/180)
-      pvsamples$pv_angle <- pvsamples$target - pvsamples$pv_angle_OG # positive angles to the right of target; negative to left
+      pvsamples$pv_angle <- pvsamples$target - pvsamples$pv_angle_OG
+      
+      epsamples$ep_angle_OG <- (atan2(epsamples$Ycursor, epsamples$Xcursor))/(pi/180)
+      epsamples$ep_angle <- epsamples$target - epsamples$ep_angle_OG
       
     }
     
     #tag outliers per participant
-    boxplot(pv_angle~task, ylab='angle at peak velocity', xlab='rotation', data = pvsamples)
-    outlier_values <- boxplot.stats(pvsamples$pv_angle)$out
-    pvsamples$isoutlier <- FALSE
-    pvsamples$isoutlier[which(pvsamples$pv_angle %in% outlier_values)] <- TRUE
-    pvsamples$pv_angle[which(pvsamples$selection_1 != 1)] <- NA
     
-    #select only non-outliers
-    pvsamples <- pvsamples[ which(pvsamples$isoutlier == FALSE), ]
+    ## pv angle outliers
+    boxplot(pv_angle~task, ylab='angle at peak velocity', xlab='rotation', data = pvsamples)
+    outlier_values_pv <- boxplot.stats(pvsamples$pv_angle)$out
+    pvsamples$isoutlier <- FALSE
+    pvsamples$isoutlier[which(pvsamples$pv_angle %in% outlier_values_pv)] <- TRUE
+    pvsamples$pv_angle[which(pvsamples$isoutlier == TRUE)] <- NA
+    
+    ## ep angle outliers
+    boxplot(pv_angle~task, ylab='angle at endpoint', xlab='rotation', data = epsamples)
+    outlier_values_ep <- boxplot.stats(epsamples$pv_angle)$out
+    epsamples$isoutlier <- FALSE
+    epsamples$isoutlier[which(epsamples$pv_angle %in% outlier_values_ep)] <- TRUE
+    epsamples$ep_angle[which(epsamples$isoutlier == TRUE)] <- NA
     
     #add ID for later merge
-    pvsamples$subject <- ppno
-    
+    pvsamples <- pvsamples %>% 
+      mutate(subject = ppno) %>%
+      left_join(select(epsamples, ep_angle, trial), by = "trial") %>%
+      select(-c(isoutlier, pv_angle_OG))
+
     #output trial data
     outfile_name <- sprintf('trialdata_%s.csv', pp_id)
     write.csv(pvsamples, file = outfile_name, row.names = FALSE)
