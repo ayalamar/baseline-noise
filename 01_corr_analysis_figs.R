@@ -1,6 +1,10 @@
+## ANALYZE ALIGNED REACHES AND NO CURSORS WITH PROPS
+## AND MAKE SOME PLOTS
+
 setwd("/Users/mayala/Desktop/baseline noise")
 
 library(dplyr)
+library(tidyr)
 library(TOSTER)
 
 colorset <- list()
@@ -20,7 +24,6 @@ colorset[['extra1T']] <- '#c400c42f'
 
 # STEPS
 # get data from output of dataCollection.R from Baseline project
-# Macintosh HD⁩ ▸ ⁨Users⁩ ▸ ⁨mayala⁩ ▸ ⁨Dropbox⁩ ▸ ⁨Baseline⁩ ▸ ⁨data
 # these have labels in this file of the experiment and subject id
 # correct the arc shift for each pp (will differ per pp)
 # get mean active localization for each pp
@@ -28,30 +31,37 @@ colorset[['extra1T']] <- '#c400c42f'
 # run exclusion criteria (note - differs for 60 deg group) - ALSO DO IT WITHOUT EXCLUDE
 # detrend data -- NOTE -- THIS IS WHERE IDs got replaced
 
+# loading the localization data
 Raging <- read.csv('localization data/Raging.csv', header = TRUE)
 aging <- read.csv('localization data/aging.csv', header = TRUE)
 Rcntrl <- read.csv('localization data/Rcntrl.csv', header = TRUE)
 cntrl <- read.csv('localization data/cntrl.csv', header = TRUE)
 
+# loading the aligned reaches and no cursors
 collapsed_df <- read.csv('combined/GROUP COMBINES/collapsed.csv', header = TRUE)
 
 tasks <- unique(collapsed_df$task)
 
+# summarize the data per participant to set it up for doing statistics
 aligned_cursor.summary <- collapsed_df %>% 
   filter(task == tasks[1]) %>%
   filter(trial > 46) %>% #remove first 45 familiarization aligned trials
   group_by(subject) %>%
-  summarise(mean_error = mean(pv_angle, na.rm = TRUE), 
-            sd_error = sd(pv_angle, na.rm = TRUE))
+  summarise(mean_error_pv = mean(pv_angle, na.rm = TRUE), 
+            sd_error_pv = sd(pv_angle, na.rm = TRUE),
+            mean_error_ep = mean(ep_angle, na.rm = TRUE), 
+            sd_error_ep = sd(ep_angle, na.rm = TRUE))
 
 aligned_no_cursor.summary <- collapsed_df %>%
   filter(task == tasks[2]) %>%
   group_by(subject) %>%
-  summarise(mean_error = mean(pv_angle, na.rm = TRUE), 
-            sd_error = sd(pv_angle, na.rm = TRUE))
+  summarise(mean_error_pv = mean(pv_angle, na.rm = TRUE), 
+            sd_error_pv = sd(pv_angle, na.rm = TRUE),
+            mean_error_ep = mean(ep_angle, na.rm = TRUE), 
+            sd_error_ep = sd(ep_angle, na.rm = TRUE))
 
-t.test(aligned_cursor.summary$sd_error, aligned_no_cursor.summary$sd_error, paired = TRUE)
-plot(aligned_cursor.summary$sd_error, aligned_no_cursor.summary$sd_error, asp = 1)
+## t.test(aligned_cursor.summary$sd_error, aligned_no_cursor.summary$sd_error, paired = TRUE)
+## plot(aligned_cursor.summary$sd_error, aligned_no_cursor.summary$sd_error, asp = 1)
 
 # correlate motor noise and baseline localization variability?
 # with exclusion criteria 
@@ -61,6 +71,7 @@ cntrl <- cntrl %>%
   select(agegroup, group, trial, active_bool, localization_deg, ID)
 ncdf <- rbind(cntrl, aging) # contains ALL localizations 
 
+# summarize prop data for doing statistics
 ncdf.summary <- ncdf %>% 
   group_by(ID, active_bool) %>%
   summarise(mean_loc = mean(localization_deg, na.rm = TRUE), 

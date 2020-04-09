@@ -1,10 +1,11 @@
 ## ANALYZING MOTOR EXECUTION NOISE (ALIGNED CURSOR AND NO-CURSOR) FOR BASELINE DATA
-## PART I
 # run these functions in order!
+
+groups <- list.files("~/Desktop/baseline noise/data")
 
 ##################
 ##################
-## COLLECT DATA 
+## COLLECT DATA PER PP
 collect_files <- function(group){
 
 library(dplyr)
@@ -191,7 +192,7 @@ preprocess_data <- function(group) {
 
 ##################
 ##################
-## COMBINE ALL PARTICIPANTS TOGETHER AND ANALYZE 
+## COMBINE ALL PARTICIPANTS TOGETHER PER EXP
 analyze_data <- function(group){
   
   ##get pp IDs again
@@ -258,6 +259,79 @@ analyze_data <- function(group){
   
 }
 
+##################
+##################
+## COMBINE ALL EXPS INTO ONE GIANT FILE FOR DOING STATS ON
+collapsed_analysis <- function() {
+  
+  # combine all trials from all participants and groups
+  library(dplyr)
+  library(tidyr)
+  
+  setwd('~/Desktop/baseline noise/combined/GROUP COMBINES/')
+  load_files <- (list.files())[-c(14:15)]
+  
+  collapsed_df <- NA
+  
+  for (exp in load_files){
+    
+    print(exp)
+    groupdf <- read.csv(exp, header = TRUE)
+    groupdf <- groupdf %>% mutate(exp_group = exp)
+    
+    if (is.data.frame(groupdf) == TRUE) {
+      
+      collapsed_df <- rbind(collapsed_df, groupdf)
+      
+    } else {
+      
+      collapsed_df <- groupdf
+      
+    }
+    
+  }
+  
+  collapsed_df <- collapsed_df[-c(1),] # remove empty first row
+  
+  collapsed_df <- collapsed_df %>%
+    filter(subject != 'ms_0129') #this participant has v few trials
+  
+  write.csv(collapsed_df, 'collapsed.csv', row.names = FALSE)
+  
+  ## quick look
+  tasks <- unique(collapsed_df$task)
+  
+  aligned_cursor <- collapsed_df %>% 
+    filter(task == tasks[1]) %>%
+    filter(trial > 46) #remove first 45 familiarization aligned trials
+  
+  aligned_no_cursor <- collapsed_df %>%
+    filter(task == tasks[2])
+  
+  aligned_cursor.summary <- aligned_cursor %>% 
+    group_by(subject) %>%
+    summarise(mean_error = mean(pv_angle, na.rm = TRUE), 
+              sd_error = sd(pv_angle, na.rm = TRUE))
+  
+  aligned_no_cursor.summary <- aligned_no_cursor %>% 
+    group_by(subject) %>%
+    summarise(mean_error = mean(pv_angle, na.rm = TRUE), 
+              sd_error = sd(pv_angle, na.rm = TRUE))
+  
+  t.test(aligned_cursor.summary$sd_error, aligned_no_cursor.summary$sd_error, paired = TRUE)
+  plot(aligned_cursor.summary$sd_error, aligned_no_cursor.summary$sd_error, asp = 1)
+  
+  library(ggplot2)
+  plotvals = data.frame(aligned_cursor.summary$sd_error, aligned_no_cursor.summary$sd_error)
+  ggplot(plotvals, aes(aligned_cursor.summary.sd_error,aligned_no_cursor.summary.sd_error))+
+    geom_point() +
+    labs(title = "",
+         x="aligned cursor variability", y = "aligned no cursor variability")+
+    theme_classic()+
+    xlim(0,18) + 
+    ylim(0,18)
+  
+}
 
 
 
