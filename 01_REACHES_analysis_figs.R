@@ -32,11 +32,20 @@ colorset[['extra1T']] <- '#c400c42f'
 # detrend data -- NOTE -- THIS IS WHERE IDs got replaced
 
 # loading the localization data
-Raging <- read.csv('localization data/Raging.csv', header = TRUE)
-aging <- read.csv('localization data/aging.csv', header = TRUE)
-Rcntrl <- read.csv('localization data/Rcntrl.csv', header = TRUE)
-cntrl <- read.csv('localization data/cntrl.csv', header = TRUE)
 
+cntrl <- read.csv('young_varianceCIs.csv', header = TRUE)
+aging <- read.csv('aging_varianceCIs.csv', header = TRUE)
+
+# put ids back
+id_df <- read.csv('id_key.csv', header = TRUE)
+
+aging <- aging %>%
+  full_join(id_df, by = "participant") %>%
+  drop_na(group)
+cntrl <- cntrl %>%
+  full_join(id_df, by = "participant") %>%
+  drop_na(group) 
+  
 # loading the aligned reaches and no cursors
 collapsed_df <- read.csv('combined/GROUP COMBINES/collapsed.csv', header = TRUE)
 
@@ -74,24 +83,25 @@ TOSTpaired.raw(n=length(aligned_cursor.summary$sd_error_pv),
 
 # correlate motor noise and baseline localization variability?
 # with exclusion criteria 
-aging <- aging %>%
-  select(agegroup, group, trial, active_bool, localization_deg, ID)
-cntrl <- cntrl %>%
-  select(agegroup, group, trial, active_bool, localization_deg, ID)
+# aging <- aging %>%
+#   select(agegroup, group, trial, active_bool, localization_deg, localization_sd, ID)
+# cntrl <- cntrl %>%
+#   select(agegroup, group, trial, active_bool, localization_deg, ID)
 ncdf <- rbind(cntrl, aging) # contains ALL localizations 
 
 # summarize prop data for doing statistics
 ncdf.summary <- ncdf %>% 
-  group_by(ID, active_bool) %>%
-  summarise(mean_loc = mean(localization_deg, na.rm = TRUE), 
-            sd_loc = sd(localization_deg, na.rm = TRUE))
+  select(group, id, a500, p500) 
+  # group_by(ID, active_bool) %>%
+  # summarise(mean_loc = mean(localization_deg, na.rm = TRUE), 
+  #           sd_loc = sd(localization_deg, na.rm = TRUE))
 
-ncdf.summary$subject <- ncdf.summary$ID
-
-ncdf.summary_0 <- ncdf.summary %>%
-  filter(active_bool == 0)
-ncdf.summary_1 <- ncdf.summary %>%
-  filter(active_bool == 1)
+ncdf.summary$subject <- ncdf.summary$id
+# 
+# ncdf.summary_0 <- ncdf.summary %>%
+#   filter(active_bool == 0)
+# ncdf.summary_1 <- ncdf.summary %>%
+#   filter(active_bool == 1)
 
 #### DO REGRESSIONS WITH ALIGNED CURSOR trials
 aligned_cursor.summary <- aligned_cursor.summary %>%
@@ -100,17 +110,17 @@ aligned_cursor.summary <- aligned_cursor.summary %>%
 # this keeps only aligned_cursor data for those w/ matching localizations (to match exclusion criteria N)
 
 # predict passive loc with aligned error sd 
-plot(aligned_cursor.summary$sd_error_ep, ncdf.summary_0$sd_loc, asp = 1)
-cor.test(aligned_cursor.summary$sd_error_ep, ncdf.summary_0$sd_loc) # no relationship 
-modeldf1 <- left_join(aligned_cursor.summary, ncdf.summary_0, by = "subject")
-mod1 <- lm(sd_loc ~ sd_error_ep, data = modeldf1)
+plot(aligned_cursor.summary$sd_error_ep, ncdf.summary$p500, asp = 1)
+cor.test(aligned_cursor.summary$sd_error_ep, ncdf.summary$p500) # no relationship 
+modeldf1 <- left_join(aligned_cursor.summary, ncdf.summary, by = "subject")
+mod1 <- lm(p500 ~ sd_error_ep, data = modeldf1)
 summary(mod1) 
 
 # predict active loc with aligned error sd 
-plot(aligned_cursor.summary$sd_error_ep, ncdf.summary_1$sd_loc, asp = 1)
-cor.test(aligned_cursor.summary$sd_error_ep, ncdf.summary_1$sd_loc) # no relationship
-modeldf2 <- left_join(aligned_cursor.summary, ncdf.summary_1, by = "subject")
-mod2 <- lm(sd_loc ~ sd_error_ep, data = modeldf2)
+plot(aligned_cursor.summary$sd_error_ep, ncdf.summary$a500, asp = 1)
+cor.test(aligned_cursor.summary$sd_error_ep, ncdf.summary$a500) # no relationship
+modeldf2 <- left_join(aligned_cursor.summary, ncdf.summary, by = "subject")
+mod2 <- lm(a500~ sd_error_ep, data = modeldf2)
 summary(mod2) 
 
 #### DO REGRESSIONS WITH ALIGNED NO CURSORS
@@ -119,17 +129,17 @@ aligned_no_cursor.summary <- aligned_no_cursor.summary %>%
   mutate(task_name = "Aligned no-cursor")
 
 # predict passive loc with aligned NO CURSOR error sd 
-plot(aligned_no_cursor.summary$sd_error_ep,ncdf.summary_0$sd_loc, asp = 1)
-cor.test(aligned_no_cursor.summary$sd_error_ep, ncdf.summary_0$sd_loc) # no relationship  p-value =0.07123
-modeldf3 <- left_join(aligned_no_cursor.summary, ncdf.summary_0, by="subject")
-mod3 <- lm(sd_loc ~ sd_error_ep, data = modeldf3)
-summary(mod3) # no p = 0.4516
+plot(aligned_no_cursor.summary$sd_error_ep,ncdf.summary$p500, asp = 1)
+cor.test(aligned_no_cursor.summary$sd_error_ep, ncdf.summary$p500) # no relationship  p-value =0.07123
+modeldf3 <- left_join(aligned_no_cursor.summary, ncdf.summary, by="subject")
+mod3 <- lm(p500 ~ sd_error_ep, data = modeldf3)
+summary(mod3)
 
 # predict active loc with aligned NO CURSOR error sd 
-plot(aligned_no_cursor.summary$sd_error_ep, ncdf.summary_1$sd_loc, asp = 1)
-cor.test(aligned_no_cursor.summary$sd_error_ep, ncdf.summary_1$sd_loc) # no relationship  p-value = 0.3346, r= -.07
-modeldf4 <- left_join(aligned_no_cursor.summary, ncdf.summary_1, by="subject")
-mod4 <- lm(sd_loc ~ sd_error_ep, data = modeldf4)
+plot(aligned_no_cursor.summary$sd_error_ep, ncdf.summary$a500, asp = 1)
+cor.test(aligned_no_cursor.summary$sd_error_ep, ncdf.summary$a500) # no relationship  p-value = 0.3346, r= -.07
+modeldf4 <- left_join(aligned_no_cursor.summary, ncdf.summary, by="subject")
+mod4 <- lm(a500 ~ sd_error_ep, data = modeldf4)
 summary(mod4) # no p = 0.699 
 
 # decided the bounds
@@ -156,17 +166,17 @@ boot.ci(results, type="bca")
 layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE),
        widths=c(2,2,2,2), heights=c(1,1,1,1))
 
-plot(modeldf1$sd_error_pv, modeldf1$sd_loc,
+plot(modeldf1$sd_error_pv, sqrt(modeldf1$p500),
      main=sprintf('Aligned cursor - passive localization'),
      xlim=c(0,30),
-     ylim=c(0,60),
+     ylim=c(0,15),
      axes=F,
      xlab='motor error variability [σ]',
      ylab='localization variability [σ]')
 
-regr <- lm(modeldf1$sd_loc~modeldf1$sd_error_ep)
+regr <- lm(sqrt(modeldf1$p500)~modeldf1$sd_error_ep)
 #abline(coef=regr$coefficients,col=rgb(0.5,0.5,0.5))
-cortest <- cor.test(modeldf1$sd_error_ep,modeldf1$sd_loc)
+cortest <- cor.test(modeldf1$sd_error_ep,sqrt(modeldf1$p500))
 
 text(25,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',
                    cortest$estimate,
@@ -175,45 +185,54 @@ text(25,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',
 axis(side=1,at=c(0,5,10,15,20,25,30))
 axis(side=2,at=c(0,10,20,30,40,50,60))
 
-plot(modeldf2$sd_error_pv, modeldf2$sd_loc,
+plot(modeldf2$sd_error_pv, sqrt(modeldf2$a500),
      main=sprintf('Aligned cursor - active localization'),
      xlim=c(0,30),
-     ylim=c(0,60),
+     ylim=c(0,15),
      axes=F,
      xlab='motor error variability [σ]',
      ylab='localization variability [σ]')
-regr <- lm(modeldf2$sd_loc~modeldf2$sd_error_ep)
+regr <- lm(sqrt(modeldf2$a500)~modeldf2$sd_error_ep)
 #abline(coef=regr$coefficients,col=rgb(0.5,0.5,0.5))
-cortest <- cor.test(modeldf2$sd_error_ep,modeldf2$sd_loc)
-text(25,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',cortest$estimate,cortest$p.value,length(modeldf2$sd_error_ep)),pos=4)
+cortest <- cor.test(modeldf2$sd_error_ep,sqrt(modeldf2$a500))
+text(25,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',
+                   cortest$estimate,
+                   cortest$p.value,
+                   length(modeldf2$sd_error_ep)),pos=4)
 axis(side=1,at=c(0,5,10,15,20,25,30))
 axis(side=2,at=c(0,10,20,30,40,50,60))
 
-plot(modeldf3$sd_error_ep, modeldf3$sd_loc,
+plot(modeldf3$sd_error_ep, sqrt(modeldf3$p500),
      main=sprintf('Aligned no-cursor - passive localization'),
      xlim=c(0,30),
-     ylim=c(0,60),
+     ylim=c(0,15),
      axes=F,
      xlab='motor error variability [σ]',
      ylab='localization variability [σ]')
-regr <- lm(modeldf3$sd_loc~modeldf3$sd_error_ep)
+regr <- lm(sqrt(modeldf3$p500)~modeldf3$sd_error_ep)
 #abline(coef=regr$coefficients,col=rgb(0.5,0.5,0.5))
-cortest <- cor.test(modeldf3$sd_error_ep,modeldf3$sd_loc)
-text(25,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',cortest$estimate,cortest$p.value,length(modeldf3$sd_error_ep)),pos=4)
+cortest <- cor.test(modeldf3$sd_error_ep,sqrt(modeldf3$p500))
+text(25,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',
+                   cortest$estimate,
+                   cortest$p.value,
+                   length(modeldf3$sd_error_ep)),pos=4)
 axis(side=1,at=c(0,5,10,15,20,25,30))
 axis(side=2,at=c(0,10,20,30,40,50,60))
 
-plot(modeldf4$sd_error_ep, modeldf4$sd_loc,
+plot(modeldf4$sd_error_ep, sqrt(modeldf4$a500),
      main=sprintf('Aligned no-cursor - active localization'),
      xlim=c(0,30),
-     ylim=c(0,60),
+     ylim=c(0,15),
      axes=F,
      xlab='motor error variability [σ]',
      ylab='localization variability [σ]')
-regr <- lm(modeldf4$sd_loc~modeldf4$sd_error_ep)
+regr <- lm(sqrt(modeldf4$a500)~modeldf4$sd_error_ep)
 #abline(coef=regr$coefficients,col=rgb(0.5,0.5,0.5))
-cortest <- cor.test(modeldf4$sd_error_ep,modeldf4$sd_loc)
-text(25,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',cortest$estimate,cortest$p.value,length(modeldf4$sd_error_ep)),pos=4)
+cortest <- cor.test(modeldf4$sd_error_ep,sqrt(modeldf4$a500))
+text(25,25,sprintf('r=%0.3f\np=%0.3f\nn=%d',
+                   cortest$estimate,
+                   cortest$p.value,
+                   length(modeldf4$sd_error_ep)),pos=4)
 axis(side=1,at=c(0,5,10,15,20,25,30))
 axis(side=2,at=c(0,10,20,30,40,50,60))
 

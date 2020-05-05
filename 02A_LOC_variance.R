@@ -1,8 +1,9 @@
-source('R/dataCollection_0404.R')
+#source('R/dataCollection_0404.R')
 
 getLocalizationVariance <- function(df) {
   
-  participant <- unique(df$participant) 
+  #participant <- unique(df$participant) 
+  participant <- unique(df$ID)
   group <- c()
   
   probs=c(.025, .500, .975)
@@ -14,10 +15,12 @@ getLocalizationVariance <- function(df) {
     ppCI <- c()
     
     group <- c(group, df$group[which(df$participant == pp.id)[1]])
-    
+    #group <- c(group, df$group[which(df$ID == pp.id)[1]])
+    print(group)
     for (active in c(1,0)) {
       
       rows <- which(df$participant == pp.id & df$active_bool == active)
+      #rows <- which(df$ID == pp.id & df$active_bool == active)
       
       scores <- df$handangle_deg[rows] - df$localization_deg[rows]
       
@@ -37,7 +40,7 @@ getLocalizationVariance <- function(df) {
     
   }
   
-  CI <- data.frame(group,participant)
+  CI <- data.frame(group,ID)
   CI <- cbind(CI, allCIs)
   row.names(CI) <- c(1:nrow(CI))
   

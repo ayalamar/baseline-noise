@@ -495,6 +495,7 @@ detrendData <- function(groupData) {
         
         # now we have the shift here:
         localizationshift_deg <- mean(rotatedPOIloc - alignedPOIloc)
+        localizationshift_sd <- sd(rotatedPOIloc - alignedPOIloc) # for motor noise analysis
         
         # let's build a dataframe with one row:
         agegroup <- c(agegroup[1])
@@ -502,7 +503,7 @@ detrendData <- function(groupData) {
         active_bool <- c(active)
         
         
-        rIDdf <- data.frame(agegroup,group,ID,participant,active_bool,localizationshift_deg)
+        rIDdf <- data.frame(agegroup,group,ID,participant,active_bool,localizationshift_deg,localizationshift_sd)
         
         if (substr(group,1,6) == 'aging_') {
           # print(ppno)
